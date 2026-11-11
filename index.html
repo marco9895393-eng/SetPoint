@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2029d8">
+  <title>Página Inicial | SetPoint Vôlei</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js.js" defer></script>
+  
+</head>
+<body>
+
+<header class="site-header">
+  <a class="marca" href="index.html"><span class="marca-bola">●</span><span>SetPoint <b>Vôlei</b></span></a>
+  <button class="botao-menu-abrir" type="button" onclick="showSidebar()" aria-label="Abrir menu">☰</button>
+  <nav class="sidebar" id="mySidebar" aria-label="Menu principal">
+    <button class="botao-menu" type="button" onclick="hideSidebar()" aria-label="Fechar menu">✕</button>
+    <ul class="elementos-menu">
+      <li><a href="index.html">Página Inicial</a></li>
+      <li><a href="produtos.html">Destaques</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrinho.html">Carrinho <span id="contador-carrinho" class="contador-carrinho">0</span></a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="emprestimos.html">Empréstimos</a></li>
+    </ul>
+  </nav>
+  <div class="overlay" id="overlay" onclick="hideSidebar()"></div>
+</header>
+
+
+<main>
+  <section class="hero">
+    <div class="hero-texto">
+      <span class="etiqueta">TUDO PARA SUA PARTIDA</span>
+      <h1>Seu jogo começa <span>no SetPoint.</span></h1>
+      <p>Bolas, joelheiras e acessórios para quem vive o voleibol dentro e fora da quadra.</p>
+      <a class="botao botao-claro" href="catalogo.html">Explorar catálogo</a>
+    </div>
+    <div class="hero-destaque">
+      <span>ESQUENTA BLACK FRIDAY</span>
+      <strong>OFERTAS<br>DE VÔLEI</strong>
+      <small>Condições especiais no nosso catálogo</small>
+    </div>
+  </section>
+
+  <section class="faixa-cupons" aria-label="Cupons de desconto">
+    <article class="cupom-card cupom-azul">
+      <span>PRIMEIRA OFERTA</span><strong>10% OFF</strong>
+      <p>Use o cupom <b>VOLEI10</b> no checkout.</p>
+    </article>
+    <article class="cupom-card cupom-escuro">
+      <span>ESQUENTA BLACK FRIDAY</span><strong>15% OFF</strong>
+      <p>Use o cupom <b>BLACK15</b> no checkout.</p>
+    </article>
+  </section>
+
+  <section class="secao-home">
+    <div class="titulo-secao"><span>ESCOLHA SUA CATEGORIA</span><h2>Equipamentos para cada jogada</h2></div>
+    <div class="categorias-home">
+      <a class="categoria-home" href="catalogo.html#bolas"><b>01</b><span>Bolas</span><small>Para treinos e partidas</small></a>
+      <a class="categoria-home" href="catalogo.html#joelheiras"><b>02</b><span>Joelheiras</span><small>Mais conforto na defesa</small></a>
+      <a class="categoria-home" href="catalogo.html#manguitos"><b>03</b><span>Manguitos</span><small>Acessórios para sua rotina</small></a>
+    </div>
+  </section>
+
+  <section class="secao-home sobre-volei">
+    <div class="titulo-secao"><span>UM POUCO SOBRE O ESPORTE</span><h2>O que é voleibol?</h2></div>
+    <p>O voleibol (ou vôlei) é um esporte coletivo olímpico jogado em uma quadra dividida por uma rede central. O objetivo principal do jogo é fazer a bola passar por cima da rede e tocar o chão da quadra adversária, evitando ao mesmo tempo que o rival faça o mesmo. É um esporte que exige trabalho em equipe, agilidade e muita concentração!</p>
+    <h3>Como é disputado?</h3>
+    <p>A modalidade é disputada por duas equipes de seis jogadores cada. As jogadas começam com o saque e os atletas usam principalmente as mãos e os braços para tocar na bola. Cada equipe tem direito a um limite máximo de três toques consecutivos para armar uma jogada e devolver a bola, sendo proibido que um mesmo jogador dê dois toques seguidos (com exceção do toque de bloqueio).</p>
+    <h3>Quais são as características do jogo?</h3>
+    <p>Diferente de outros esportes com bola, o vôlei é uma modalidade de não-contato físico direto entre os oponentes. Isso exige alta coordenação, reflexo rápido, posicionamento estratégico e forte sincronia de grupo para dominar os fundamentos de defesa, levantamento e ataque. Cada jogador tem uma função importante dentro da equipe!</p>
+  </section>
+</main>
+
+
+<footer class="rodape">
+  <strong>SetPoint Vôlei</strong>
+  <p>Loja fictícia de artigos para voleibol — projeto escolar.</p>
+  <a href="catalogo.html">Ver catálogo</a>
+</footer>
+
+
+</body>
+</html>

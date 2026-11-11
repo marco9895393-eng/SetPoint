@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2029d8">
+  <title>Carrinho | SetPoint Vôlei</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js.js" defer></script>
+  
+</head>
+<body>
+
+<header class="site-header">
+  <a class="marca" href="index.html"><span class="marca-bola">●</span><span>SetPoint <b>Vôlei</b></span></a>
+  <button class="botao-menu-abrir" type="button" onclick="showSidebar()" aria-label="Abrir menu">☰</button>
+  <nav class="sidebar" id="mySidebar" aria-label="Menu principal">
+    <button class="botao-menu" type="button" onclick="hideSidebar()" aria-label="Fechar menu">✕</button>
+    <ul class="elementos-menu">
+      <li><a href="index.html">Página Inicial</a></li>
+      <li><a href="produtos.html">Destaques</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrinho.html">Carrinho <span id="contador-carrinho" class="contador-carrinho">0</span></a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="emprestimos.html">Empréstimos</a></li>
+    </ul>
+  </nav>
+  <div class="overlay" id="overlay" onclick="hideSidebar()"></div>
+</header>
+
+
+<main class="pagina-padrao">
+  <div class="titulo-pagina"><span>SUA SELEÇÃO</span><h1>Meu carrinho</h1><p>Confira os produtos antes de finalizar.</p></div>
+  <section class="painel-carrinho">
+    <div id="lista-carrinho"></div>
+    <div class="resumo-carrinho">
+      <p class="linha-total"><span>Subtotal</span><strong id="subtotal-carrinho">R$ 0,00</strong></p>
+      <p class="linha-total"><span>Total</span><strong id="total-carrinho">R$ 0,00</strong></p>
+      <a class="botao botao-principal" id="ir-checkout" href="checkout.html">Ir para o checkout</a>
+      <button class="botao botao-secundario" type="button" onclick="clearCart()">Limpar carrinho</button>
+    </div>
+  </section>
+</main>
+
+
+<footer class="rodape">
+  <strong>SetPoint Vôlei</strong>
+  <p>Loja fictícia de artigos para voleibol — projeto escolar.</p>
+  <a href="catalogo.html">Ver catálogo</a>
+</footer>
+
+
+</body>
+</html>

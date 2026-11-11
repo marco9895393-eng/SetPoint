@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2029d8">
+  <title>Produtos em Destaque | SetPoint Vôlei</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js.js" defer></script>
+  
+</head>
+<body>
+
+<header class="site-header">
+  <a class="marca" href="index.html"><span class="marca-bola">●</span><span>SetPoint <b>Vôlei</b></span></a>
+  <button class="botao-menu-abrir" type="button" onclick="showSidebar()" aria-label="Abrir menu">☰</button>
+  <nav class="sidebar" id="mySidebar" aria-label="Menu principal">
+    <button class="botao-menu" type="button" onclick="hideSidebar()" aria-label="Fechar menu">✕</button>
+    <ul class="elementos-menu">
+      <li><a href="index.html">Página Inicial</a></li>
+      <li><a href="produtos.html">Destaques</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrinho.html">Carrinho <span id="contador-carrinho" class="contador-carrinho">0</span></a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="emprestimos.html">Empréstimos</a></li>
+    </ul>
+  </nav>
+  <div class="overlay" id="overlay" onclick="hideSidebar()"></div>
+</header>
+
+
+<main class="pagina-padrao">
+  <div class="titulo-pagina"><span>SELEÇÃO SETPOINT</span><h1>Produtos em destaque</h1><p>Alguns itens do nosso catálogo para você conhecer.</p></div>
+  <div class="container-produtos">
+    <article class="card-produto">
+      <a class="imagem-produto" href="produto.html?id=bola-mikasa-v200w"><img src="https://cdn.vnda.com.br/mikasa/2024/11/29/13_31_40_684_13_11_0_084_bola20oficial20de20voleibol20mikasa20v200w_1.jpg?v=1732897905" alt="Bola Mikasa V200W" loading="lazy"></a>
+      <span class="categoria-mini">DESTAQUE</span><h3 class="nome-produto">Bola Mikasa V200W</h3>
+      <span class="preco">R$ 1.099,99</span>
+      <button class="botao botao-principal" onclick="addToCart('bola-mikasa-v200w')">Adicionar ao carrinho</button>
+    </article>
+    <article class="card-produto">
+      <a class="imagem-produto" href="produto.html?id=joelheira-n1-sport-knit"><img src="https://images.yampi.me/assets/stores/maniadefutsal/uploads/images/joelheira-volei-n1-sport-knit-3d-12303-p-6679cf6ec12e7-medium.jpg" alt="Joelheira N1 Sport Knit 3D" loading="lazy"></a>
+      <span class="categoria-mini">DESTAQUE</span><h3 class="nome-produto">Joelheira N1 Sport Knit</h3>
+      <span class="preco">R$ 197,91</span>
+      <button class="botao botao-principal" onclick="addToCart('joelheira-n1-sport-knit')">Adicionar ao carrinho</button>
+    </article>
+    <article class="card-produto">
+      <a class="imagem-produto" href="produto.html?id=manguito-n1"><img src="https://http2.mlstatic.com/D_Q_NP_663547-MLA113983381329_072026-O.webp" alt="Manguito N1" loading="lazy"></a>
+      <span class="categoria-mini">DESTAQUE</span><h3 class="nome-produto">Manguito N1</h3>
+      <span class="preco">R$ 177,55</span>
+      <button class="botao botao-principal" onclick="addToCart('manguito-n1')">Adicionar ao carrinho</button>
+    </article></div>
+  <p class="centralizado"><a class="botao botao-principal" href="catalogo.html">Ver todos os produtos</a></p>
+</main>
+
+
+<footer class="rodape">
+  <strong>SetPoint Vôlei</strong>
+  <p>Loja fictícia de artigos para voleibol — projeto escolar.</p>
+  <a href="catalogo.html">Ver catálogo</a>
+</footer>
+
+
+</body>
+</html>

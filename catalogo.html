@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2029d8">
+  <title>Catálogo | SetPoint Vôlei</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js.js" defer></script>
+  
+</head>
+<body>
+
+<header class="site-header">
+  <a class="marca" href="index.html"><span class="marca-bola">●</span><span>SetPoint <b>Vôlei</b></span></a>
+  <button class="botao-menu-abrir" type="button" onclick="showSidebar()" aria-label="Abrir menu">☰</button>
+  <nav class="sidebar" id="mySidebar" aria-label="Menu principal">
+    <button class="botao-menu" type="button" onclick="hideSidebar()" aria-label="Fechar menu">✕</button>
+    <ul class="elementos-menu">
+      <li><a href="index.html">Página Inicial</a></li>
+      <li><a href="produtos.html">Destaques</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrinho.html">Carrinho <span id="contador-carrinho" class="contador-carrinho">0</span></a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="emprestimos.html">Empréstimos</a></li>
+    </ul>
+  </nav>
+  <div class="overlay" id="overlay" onclick="hideSidebar()"></div>
+</header>
+
+
+<main class="pagina-padrao">
+  <section class="banner-cupom banner-cupom-pequeno">
+    <div><span>ESQUENTA BLACK FRIDAY</span><h1>Seu próximo ponto vale desconto.</h1><p>Use <b>BLACK15</b> e ganhe 15% OFF no checkout.</p></div>
+    <a class="botao botao-claro" href="carrinho.html">Ver carrinho</a>
+  </section>
+  <div class="titulo-pagina"><span>SETPOINT VÔLEI</span><h1>Catálogo completo</h1><p>Confira nossos produtos para jogar com mais conforto e confiança.</p></div>
+  <section class="categoria-catalogo" id="bolas"><div class="titulo-secao"><span>CATÁLOGO</span><h2>Bolas</h2></div><div class="container-produtos">
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=bola-mikasa-v200w"><img src="https://cdn.vnda.com.br/mikasa/2024/11/29/13_31_40_684_13_11_0_084_bola20oficial20de20voleibol20mikasa20v200w_1.jpg?v=1732897905" alt="Bola Mikasa V200W" loading="lazy"></a>
+        <span class="categoria-mini">Bola</span>
+        <h3 class="nome-produto">Bola Mikasa V200W</h3>
+        <span class="preco">R$ 1.099,99</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('bola-mikasa-v200w')">Adicionar</button>
+          <a class="link-loja" href="https://www.mikasa.com.br/MK000062.html" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article>
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=bola-penalty-8-1-pro"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFgq3q3JexnbT49FIS8twiBA35tAvwsvKMTdcNUZrsnCVq20Rln3H1ciE&s=10" alt="Bola Penalty 8.1 Pro" loading="lazy"></a>
+        <span class="categoria-mini">Bola</span>
+        <h3 class="nome-produto">Bola Penalty 8.1 Pro</h3>
+        <span class="preco">R$ 599,99</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('bola-penalty-8-1-pro')">Adicionar</button>
+          <a class="link-loja" href="https://www.penalty.com.br/bola-volei-penalty-8-1-pro/p?srsltid=AfmBOooP0olr6kJpYpwI5AQTUDfay3vpWPLEKtF5F_eLNGSk97AHCuls" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article>
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=bola-molten-v5m5000"><img src="https://combatkimonos.com.br/wp-content/uploads/2025/07/Volei-V5M-5000-1-600x600.jpeg" alt="Bola Molten V5M5000" loading="lazy"></a>
+        <span class="categoria-mini">Bola</span>
+        <h3 class="nome-produto">Bola Molten V5M5000</h3>
+        <span class="preco">R$ 799.90</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('bola-molten-v5m5000')">Adicionar</button>
+          <a class="link-loja" href="https://www.molten.com.br/bola-de-volei-molten-v5m5000-volleyball-fivb-approved-com-flistatec-1" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article>
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=bola-penalty-vp5000"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM4T2HA4voSXvU8GtbuAcUgY_3Jb-2fyWbNs1tO6flBIE5GxoZ_w6D74w&s=10" alt="Bola penalty vp 5000" loading="lazy"></a>
+        <span class="categoria-mini">Bola</span>
+        <h3 class="nome-produto">Bola Penalty vp5000</h3>
+        <span class="preco">R$ 189,99</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('bola-penalty-vp5000')">Adicionar</button>
+          <a class="link-loja" href="https://www.penalty.com.br/bola-volei-penalty-vp-5000-x/p?srsltid=AfmBOopKu86UGAM5KcqKAsxf6UFwC5bcUhoQbEkS1gCs0eBUecyiBhjF" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article>
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=bola-mikasa-v360w"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWqXczrcIV0AJQ0gTJzaaIe6rgdRVoO6hxy4TIcLcGAFvk8nfv1nr2aCQ&s=10" alt="Bola Mikasa v360W" loading="lazy"></a>
+        <span class="categoria-mini">Bola</span>
+        <h3 class="nome-produto">Bola Mikasa v360W</h3>
+        <span class="preco">R$ 219,99</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('bola-mikasa-v360w')">Adicionar</button>
+          <a class="link-loja" href="https://www.mikasa.com.br/MK000121.html" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article></div></section><section class="categoria-catalogo" id="joelheiras"><div class="titulo-secao"><span>CATÁLOGO</span><h2>Joelheiras</h2></div><div class="container-produtos">
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=joelheira-n1-sport-knit"><img src="https://images.yampi.me/assets/stores/maniadefutsal/uploads/images/joelheira-volei-n1-sport-knit-3d-12303-p-6679cf6ec12e7-medium.jpg" alt="Joelheira N1 Sport Knit 3D" loading="lazy"></a>
+        <span class="categoria-mini">Joelheira</span>
+        <h3 class="nome-produto">Joelheira N1 Sport Knit</h3>
+        <span class="preco">R$ 197,91</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('joelheira-n1-sport-knit')">Adicionar</button>
+          <a class="link-loja" href="https://www.protenista.com.br/acessorios/munhequeiras/joelheira-n1-sport-spry-em-tecido-knit-3d-cores?variant_id=16229&parceiro=4346" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article>
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=mizuno-elite-9-sl2"><img src="https://http2.mlstatic.com/D_NQ_NP_659093-CBT82020028939_012025-O.webp" alt="Mizuno Elite 9 Sl2" loading="lazy"></a>
+        <span class="categoria-mini">Joelheira</span>
+        <h3 class="nome-produto">Mizuno Elite 9 Sl2</h3>
+        <span class="preco">R$ 219,99</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('mizuno-elite-9-sl2')">Adicionar</button>
+          <a class="link-loja" href="https://www.amazon.com.br/Joelheira-v%C3%B4lei-Mizuno-Elite-Preto/dp/B017F0O242?source=ps-sl-shoppingads-lpcontext&psc=1&smid=A2EB9PYM83FCP9" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article>
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=joelheira-nike-v-lei-essential-knee-pad"><img src="https://static.ativaesportes.com.br/public/ativaesportes/imagens/produtos/joelheira-nike-volei-essential-knee-pad-unissex-66466fcb723c6.jpg" alt="Joelheira Nike Essential Knee Pad" loading="lazy"></a>
+        <span class="categoria-mini">Joelheira</span>
+        <h3 class="nome-produto">Joelheira Nike Vôlei Essential Knee Pad</h3>
+        <span class="preco">R$ 290,82</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('joelheira-nike-v-lei-essential-knee-pad')">Adicionar</button>
+          <a class="link-loja" href="https://www.amazon.com.br/Joelheira-Essential-Volleyball-Knee-Pad/dp/B00HQJUHE2?source=ps-sl-shoppingads-lpcontext&psc=1&smid=A2WKAQ5WODH4R2" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article></div></section><section class="categoria-catalogo" id="manguitos"><div class="titulo-secao"><span>CATÁLOGO</span><h2>Manguitos</h2></div><div class="container-produtos">
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=manguito-n1"><img src="https://http2.mlstatic.com/D_Q_NP_663547-MLA113983381329_072026-O.webp" alt="Manguito N1" loading="lazy"></a>
+        <span class="categoria-mini">Manguito</span>
+        <h3 class="nome-produto">Manguito N1</h3>
+        <span class="preco">R$ 177,55</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('manguito-n1')">Adicionar</button>
+          <a class="link-loja" href="https://www.centauro.com.br/prot--de-antebraco-n1-spry-preto-sem-listra-tag-branca-tam-m11u2s-mktp.html?cor=02" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article>
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=manguito-tm7"><img src="https://m.media-amazon.com/images/I/51nKNVYyr2L._AC_UF1000,1000_QL80_.jpg" alt="Manguito TM7" loading="lazy"></a>
+        <span class="categoria-mini">Manguito</span>
+        <h3 class="nome-produto">Manguito TM7</h3>
+        <span class="preco">R$ 99,77</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('manguito-tm7')">Adicionar</button>
+          <a class="link-loja" href="https://www.tm7sports.com.br/vestuario-tm7/manguito-uv-block-tm7" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article>
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=manguito-poker"><img src="https://http2.mlstatic.com/D_NQ_NP_667395-MLA92032449864_092025-O.webp" alt="Manguito Poker" loading="lazy"></a>
+        <span class="categoria-mini">Manguito</span>
+        <h3 class="nome-produto">Manguito Poker</h3>
+        <span class="preco">R$ 59,99</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('manguito-poker')">Adicionar</button>
+          <a class="link-loja" href="https://loja.poker.esp.br/bike/manguito/manguito-c-elastano-protecao-insetos-uv50-04469-15619?parceiro=9182&variant_id=101485" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article>
+      <article class="card-produto">
+        <a class="imagem-produto" href="produto.html?id=manguito-vitsho"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSI_mI8x6Mi3DHwl9YZKE7TgpU_gzGCY_IVM3u2lfUJQ&s=10" alt="Manguito Vitsho" loading="lazy"></a>
+        <span class="categoria-mini">Manguito</span>
+        <h3 class="nome-produto">Manguito Vitsho</h3>
+        <span class="preco">R$ 32,00</span>
+        <div class="acoes-produto">
+          <button class="botao botao-principal" type="button" onclick="addToCart('manguito-vitsho')">Adicionar</button>
+          <a class="link-loja" href="https://www.amazon.com.br/Manguito-Curto-Futebol-Atividades-F%C3%ADsicas/dp/B0CSG7997V?source=ps-sl-shoppingads-lpcontext&smid=A3D2Z25Q32MNKO&psc=1" target="_blank" rel="noopener noreferrer">Ver loja</a>
+        </div>
+      </article></div></section>
+</main>
+
+
+<footer class="rodape">
+  <strong>SetPoint Vôlei</strong>
+  <p>Loja fictícia de artigos para voleibol — projeto escolar.</p>
+  <a href="catalogo.html">Ver catálogo</a>
+</footer>
+
+
+</body>
+</html>

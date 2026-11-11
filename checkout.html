@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2029d8">
+  <title>Checkout | SetPoint Vôlei</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js.js" defer></script>
+  
+</head>
+<body>
+
+<header class="site-header">
+  <a class="marca" href="index.html"><span class="marca-bola">●</span><span>SetPoint <b>Vôlei</b></span></a>
+  <button class="botao-menu-abrir" type="button" onclick="showSidebar()" aria-label="Abrir menu">☰</button>
+  <nav class="sidebar" id="mySidebar" aria-label="Menu principal">
+    <button class="botao-menu" type="button" onclick="hideSidebar()" aria-label="Fechar menu">✕</button>
+    <ul class="elementos-menu">
+      <li><a href="index.html">Página Inicial</a></li>
+      <li><a href="produtos.html">Destaques</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrinho.html">Carrinho <span id="contador-carrinho" class="contador-carrinho">0</span></a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="emprestimos.html">Empréstimos</a></li>
+    </ul>
+  </nav>
+  <div class="overlay" id="overlay" onclick="hideSidebar()"></div>
+</header>
+
+
+<main class="pagina-padrao">
+  <div class="titulo-pagina"><span>QUASE LÁ</span><h1>Finalizar compra</h1><p>Esta etapa é uma simulação para o projeto escolar.</p></div>
+  <section class="checkout-layout">
+    <div class="painel-checkout">
+      <h2>Resumo do pedido</h2>
+      <div id="resumo-checkout"></div>
+      <div class="campo-cupom">
+        <label for="codigo-cupom">Cupom de desconto</label>
+        <div class="linha-cupom"><input id="codigo-cupom" type="text" placeholder="Ex.: VOLEI10"><button class="botao botao-principal" type="button" onclick="aplicarCupom()">Aplicar</button></div>
+        <small>Cupons disponíveis: VOLEI10 (10%) ou BLACK15 (15%).</small>
+        <p id="mensagem-cupom" class="mensagem-form"></p>
+      </div>
+      <div class="valores-checkout">
+        <p><span>Subtotal</span><strong id="checkout-subtotal">R$ 0,00</strong></p>
+        <p><span>Desconto</span><strong id="checkout-desconto">R$ 0,00</strong></p>
+        <p class="total-final"><span>Total</span><strong id="checkout-total">R$ 0,00</strong></p>
+      </div>
+      <button id="finalizar-pedido" class="botao botao-principal botao-largo" type="button" onclick="finalizarPedido()">Confirmar pedido simulado</button>
+      <p class="aviso-simulado">Não há cobrança, pagamento real ou envio de pedido. Os valores e cupons são apenas demonstrativos.</p>
+    </div>
+  </section>
+</main>
+
+
+<footer class="rodape">
+  <strong>SetPoint Vôlei</strong>
+  <p>Loja fictícia de artigos para voleibol — projeto escolar.</p>
+  <a href="catalogo.html">Ver catálogo</a>
+</footer>
+
+
+</body>
+</html>

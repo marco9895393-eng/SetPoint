@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2029d8">
+  <title>Cadastro | SetPoint Vôlei</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js.js" defer></script>
+  
+</head>
+<body>
+
+<header class="site-header">
+  <a class="marca" href="index.html"><span class="marca-bola">●</span><span>SetPoint <b>Vôlei</b></span></a>
+  <button class="botao-menu-abrir" type="button" onclick="showSidebar()" aria-label="Abrir menu">☰</button>
+  <nav class="sidebar" id="mySidebar" aria-label="Menu principal">
+    <button class="botao-menu" type="button" onclick="hideSidebar()" aria-label="Fechar menu">✕</button>
+    <ul class="elementos-menu">
+      <li><a href="index.html">Página Inicial</a></li>
+      <li><a href="produtos.html">Destaques</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrinho.html">Carrinho <span id="contador-carrinho" class="contador-carrinho">0</span></a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="emprestimos.html">Empréstimos</a></li>
+    </ul>
+  </nav>
+  <div class="overlay" id="overlay" onclick="hideSidebar()"></div>
+</header>
+
+
+<main class="pagina-padrao">
+  <section class="formulario">
+    <div class="titulo-pagina"><span>BEM-VINDO(A)</span><h1>Criar conta</h1><p>Preencha os dados para testar o cadastro demonstrativo.</p></div>
+    <form id="form-cadastro">
+      <div class="grupo-form"><label for="nome">Nome completo</label><input id="nome" name="nome" type="text" placeholder="Seu nome" required></div>
+      <div class="grupo-form"><label for="email">E-mail</label><input id="email" name="email" type="email" placeholder="voce@email.com" required></div>
+      <div class="grupo-form"><label for="telefone">Telefone (opcional)</label><input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000"></div>
+      <div class="grupo-form"><label for="senha">Senha</label><input id="senha" name="senha" type="password" minlength="6" placeholder="Mínimo de 6 caracteres" required></div>
+      <button class="botao botao-principal botao-largo" type="submit">Cadastrar</button>
+      <p id="mensagem-cadastro" class="mensagem-form"></p>
+    </form>
+    <p class="texto-form">Já tem cadastro? <a href="login.html">Entrar</a></p>
+    <p class="aviso-simulado">Cadastro demonstrativo: os dados ficam somente neste navegador. Não use uma senha real.</p>
+  </section>
+</main>
+
+
+<footer class="rodape">
+  <strong>SetPoint Vôlei</strong>
+  <p>Loja fictícia de artigos para voleibol — projeto escolar.</p>
+  <a href="catalogo.html">Ver catálogo</a>
+</footer>
+
+
+</body>
+</html>
