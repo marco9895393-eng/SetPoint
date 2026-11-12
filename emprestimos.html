@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimos | Loja de Voleibol</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+    <style>
+        .container-emprestimos {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .container-emprestimos h1 {
+            text-align: center;
+            color: #2a31f5;
+            margin-bottom: 30px;
+        }
+        .cartao-emprestimo {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-left: 4px solid #2a31f5;
+        }
+        .cartao-emprestimo h3 {
+            color: #2a31f5;
+            margin-top: 0;
+        }
+        .status {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+        .status.ativo {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status.concluido {
+            background: #e2e3e5;
+            color: #383d41;
+        }
+        .sem-emprestimos {
+            text-align: center;
+            padding: 40px;
+            background: #fff;
+            border-radius: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="div-botoes">
+            <a href="#" class="botao-menu-abrir" onclick="showSidebar(); return false;" aria-label="Abrir menu">☰</a>
+        </div>
+        <nav class="sidebar" id="mySidebar" aria-label="Menu principal">
+            <a href="#" class="botao-menu" onclick="hideSidebar(); return false;" aria-label="Fechar menu">✕</a>
+            <ul class="elementos-menu">
+                <li><a href="INDEXO.HTML"> Página Inicial</a></li>
+                <li><a href="cadastro.html"> Cadastro</a></li>
+                <li><a href="login.html"> Login</a></li>
+                <li><a href="produtos.html"> Produtos em Destaque</a></li>
+                <li><a href="catalogo.html"> Catálogo</a></li>
+                <li><a href="perfil.html"> Perfil</a></li>
+                <li><a href="emprestimos.html"> Empréstimos</a></li>
+            </ul>
+        </nav>
+        <div class="overlay" id="overlay" onclick="hideSidebar()"></div>
+    </header>
+
+    <main class="container-emprestimos">
+        <h1> Meus Empréstimos</h1>
+
+        <div class="cartao-emprestimo">
+            <h3>Bola Oficial Mikasa V200W</h3>
+            <p><strong>Data do empréstimo:</strong> 28/08/2026</p>
+            <p><strong>Devolução prevista:</strong> 04/09/2026</p>
+            <span class="status ativo">🔄 Em andamento</span>
+        </div>
+
+        <div class="cartao-emprestimo">
+            <h3>Joelheira N1 Sport Knit - Tamanho M</h3>
+            <p><strong>Data do empréstimo:</strong> 10/08/2026</p>
+            <p><strong>Devolução:</strong> 17/08/2026 ✅</p>
+            <span class="status concluido">✅ Concluído</span>
+        </div>
+
+        <div class="sem-emprestimos">
+            <p>📌 Para solicitar um empréstimo, visite o Catálogo e escolha o produto desejado!</p>
+        </div>
+    </main>
+</body>
+</html>
